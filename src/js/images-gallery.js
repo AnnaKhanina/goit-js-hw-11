@@ -23,6 +23,6 @@ function renderImages(images) {
     })
     .join('')
 
-  gallery.insertAdjacentHTML('beforeend', markup)
+  gallery.insertAdjacentHTML('beforeend', markup);
 };
 
