@@ -9,6 +9,7 @@ import 'simplelightbox/dist/simple-lightbox.min.css';
 const searchForm = document.querySelector('#search-form');
 const gallery = document.querySelector('.gallery');
 const loadMoreBtn = document.querySelector('.btn-load-more');
+
 let query = '';
 let page = 1;
 let simpleLightBox;
@@ -22,7 +23,7 @@ loadMoreBtn.addEventListener('click', onLoadMoreBtn);
 
 function onSearchForm(evt) {
   evt.preventDefault();
-  //window.scrollTo({ top: 0 })
+  window.scrollTo({ top: 0 });
   page = 1;
   query = evt.currentTarget.searchQuery.value.trim();
   gallery.innerHTML = '';
